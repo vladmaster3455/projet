@@ -1,2 +1,2 @@
 # projet
-voici le projet de developpement mobile de serge senghor et cheikh tidiane djigo de la  classe dsti2c de l ecole superieur polytechnique de dakar  lapplication se trouve dans le dossier  app/src/main/java/com/example/projet/    c est le fichier MainActivity.java le ficher pricipale
+voici le projet de developpement mobile de serge senghor et cheikh tidiane djigo de la  classe dsti2c de l ecole superieur polytechnique de dakar  lapplication se trouve dans le dossier  app/src/main/java/com/example/projet/    c est le fichier MainActivity.java le ficher pricipale on a utlisateur comme emulateur un pixel 5 api 30
