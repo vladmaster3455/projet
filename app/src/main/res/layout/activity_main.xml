@@ -1,0 +1,69 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/articleLayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="7dp" />
+
+    <RelativeLayout
+        android:id="@+id/articleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/articleTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titre de l'article"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/articleContentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/articleTitleTextView"
+            android:text="Contenu de l'article" />
+
+        <EditText
+            android:id="@+id/newArticleTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/articleContentTextView"
+            android:hint="Titre de l'article"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/newArticleContentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newArticleTitleEditText"
+            android:hint="Contenu de l'article"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/addArticleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newArticleContentEditText"
+            android:layout_alignParentEnd="true"
+            android:onClick="onAddArticleClick"
+            android:text="Ajouter un article" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
